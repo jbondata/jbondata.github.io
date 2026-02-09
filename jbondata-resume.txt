@@ -1,0 +1,42 @@
+﻿Jakub Bonnert
+Simpsonville, SC | Remote-first; Hybrid/On-site open
+224-307-9941 | jakub.bonnert@gmail.com
+Website: https://jbondata.com | GitHub: https://github.com/Jbondata
+Professional Summary
+Entry-level IT and data analytics candidate completing a B.S. in Information Technology (Data Analytics concentration) with experience in LLM response evaluation, quality review, and freelance front-end web design. Promoted at Outlier AI from evaluator to reviewer based on accuracy and consistency. Seeking Junior Analyst, Data/BI Support, IT Analyst, or Automation/Operations roles.
+Technical Skills
+* Automation: n8n (workflows, webhooks, integrations)
+* Scripting: Pine Script (TradingView indicators/alerts)
+* Development / AI Tools: Claude Code CLI, Codex CLI, Cursor IDE, Google Antigravity IDE
+* Design / UX: Figma, Framer, Google Stitch
+* Platforms: GitHub, web publishing/portfolio management
+* Analytics (foundational): SQL, Python, Excel, data visualization fundamentals
+Professional Experience
+Outlier AI — AI Response Evaluator → Reviewer (Promoted)
+Remote | 2022–2023
+* Evaluated LLM-generated responses using defined quality rubrics across enterprise-oriented tasks.
+* Compared alternative outputs and assigned structured ratings with written rationale.
+* Promoted to Reviewer role to audit peer evaluations for consistency and quality.
+* Identified and corrected scoring issues; escalated ambiguous edge cases with clear documentation.
+Self-Employed — Front-End Web Designer
+Remote | 2024–2025
+* Designed and delivered front-end websites based on client requirements and revision cycles.
+* Built user-facing layouts focused on clarity, usability, and clean navigation.
+* Managed client communication, timelines, and final handoff independently.
+* Maintained portfolio and project presence through personal website and GitHub.
+Education
+Southern New Hampshire University (SNHU)
+Bachelor of Science, Information Technology
+Concentration: Data Analytics
+October 2023 – Expected April 2026
+GPA: 3.375
+Honors: President’s/Dean’s List (Fall 2025)
+Greenville Technical College (GTC)
+Associate in Applied Science
+2021–2023
+Certifications
+* UI / UX for Beginners — Great Learning Academy
+* Digital Skills: User Experience — FutureLearn (in association with Accenture), issued Feb 2025
+Projects & Portfolio
+* Personal Website: https://jbondata.com
+* Pine Script Indicator Suite: Consolidated TradingView indicators demonstrating time-series logic, condition-based signals, and chart visualization.

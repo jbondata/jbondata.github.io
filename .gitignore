@@ -1,0 +1,8 @@
+# Local / IDE
+.DS_Store
+.env
+.env.*
+*.log
+
+# Reference only (not deployed)
+style-guide/
