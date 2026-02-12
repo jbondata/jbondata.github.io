@@ -35,6 +35,7 @@
 html {
   font-size: clamp(16px, calc(15.2px + 0.25vw), 20px);
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 html,
@@ -86,7 +87,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: min(1100px, 90vw);
+  max-width: min(1100px, calc(100vw - 2rem));
   margin: 0 auto;
 }
 
@@ -152,6 +153,7 @@ img {
   letter-spacing: 0.05em;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
+  min-height: 44px;
 }
 
 /* Main (OpenSpec page background) */
@@ -220,6 +222,7 @@ main {
   font-size: 0.9375rem;
   letter-spacing: 0.01em;
   line-height: 1.65;
+  text-wrap: balance;
 }
 
 .hero-actions {
@@ -246,6 +249,7 @@ main {
   background: transparent;
   transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.15s;
   user-select: none;
+  min-height: 44px;
 }
 
 .btn:active {
@@ -325,6 +329,7 @@ main {
   font-size: 0.9375rem;
   line-height: 1.6;
   max-width: 70ch;
+  text-wrap: pretty;
 }
 
 .body {
@@ -333,6 +338,7 @@ main {
   line-height: 1.65;
   max-width: 70ch;
   margin-top: 0.75rem;
+  text-wrap: pretty;
 }
 
 /* Grid & cards (OpenSpec tools card style) */
@@ -492,6 +498,7 @@ main {
   min-height: 1rem;
   font-size: 0.8125rem;
   color: var(--accent-lime);
+  overflow-wrap: anywhere;
 }
 
 /* Footer (OpenSpec footer) */
@@ -587,6 +594,7 @@ main {
   font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .resume-list li {
@@ -694,6 +702,10 @@ main {
 }
 
 @media (max-width: 780px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+
   .nav-toggle {
     display: inline-flex;
   }
@@ -709,22 +721,105 @@ main {
     padding: 0.75rem;
     flex-direction: column;
     gap: 0.75rem;
-    min-width: 180px;
+    min-width: min(88vw, 260px);
+    max-width: 92vw;
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   .site-nav.open {
     display: flex;
   }
+
+  .site-nav .nav-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: calc(100vw - 1.25rem);
+  }
+
+  .hero {
+    padding: 4.25rem 0.625rem 1.25rem;
+  }
+
+  .hero-top {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .avatar {
+    width: 104px;
+    height: 104px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .card {
+    padding: 1.15rem 1rem;
+  }
+
+  .resume-section .container {
+    padding: 1.25rem 0.9rem;
+  }
+
+  .resume-block {
+    padding: 1rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-actions {
+    width: 100%;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+  }
+
+  .footer-inner {
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-tags {
+    justify-content: flex-start;
+  }
 }
 
 /* Subtle scroll animations */
 .animate-on-scroll {
+  opacity: 1;
+  transform: none;
+}
+
+.js .animate-on-scroll {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.animate-on-scroll.in-view {
+.js .animate-on-scroll.in-view {
   opacity: 1;
   transform: translateY(0);
 }

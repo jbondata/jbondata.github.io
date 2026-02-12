@@ -36,6 +36,7 @@
     if (!navToggle || !siteNav) return;
     navToggle.setAttribute("aria-expanded", open ? "true" : "false");
     siteNav.classList.toggle("open", open);
+    document.body.classList.toggle("nav-open", open);
     navToggle.setAttribute(
       "aria-label",
       open ? "Close navigation menu" : "Open navigation menu"
